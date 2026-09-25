@@ -19,8 +19,21 @@ schema instead of hand-written HTML per page.
   cd scripts && python3 generate_html.py
   ```
 
-- `.github/workflows/generate-html.yml` runs the same generator on every push and commits the
-  regenerated `docs/` back into the repo.
+- `.github/workflows/generate-html.yml` runs the same generator on every push to `master` and
+  commits the regenerated `docs/` back into the repo.
+
+## Deployment (GitHub Pages)
+
+The site is served straight from the `docs/` folder on `master` (repo Settings → Pages → Source:
+`master` / `/docs`), so `docs/` is the actual site root everything gets requested relative to.
+That's why `docs/style/`, `docs/js/`, and `docs/textures/` live inside `docs/` rather than at the
+repo root - anything the generated pages need to load in a browser has to be under `docs/`, or
+GitHub Pages simply won't serve it. `docs/.nojekyll` disables Jekyll processing, since this is
+already fully-rendered static HTML.
+
+`style/main.css`, `js/main.js`, and `textures/` are hand-maintained (or fetched by the scripts
+below) directly inside `docs/` - they aren't generated from `data/`, only the `*.html` pages and
+`docs/index.html` are.
 
 ## Adding a new feature to the wiki
 

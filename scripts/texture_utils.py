@@ -24,7 +24,7 @@ def find_texture(key: str) -> str | None:
     for subdir in constants.TEXTURE_SEARCH_DIRS:
         on_disk = os.path.join(constants.TEXTURES_DIR, subdir, key + ".png")
         if os.path.isfile(on_disk):
-            return f"../textures/{subdir}/{key}.png"
+            return f"textures/{subdir}/{key}.png"
     return None
 
 

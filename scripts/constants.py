@@ -5,8 +5,8 @@ CATEGORIES_FILE = DATA_DIR + "/categories.json"
 VANILLA_TEXTURE_OVERRIDES_FILE = DATA_DIR + "/vanilla_texture_names.json"
 
 TEMPLATE_DIR = "../template-html"
-TEXTURES_DIR = "../textures"
 OUTPUT_DIR = "../docs"
+TEXTURES_DIR = OUTPUT_DIR + "/textures"
 OUTPUT_IMAGES_DIR = OUTPUT_DIR + "/images"
 OUTPUT_VIDEOS_DIR = OUTPUT_DIR + "/videos"
 
