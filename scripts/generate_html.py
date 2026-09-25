@@ -17,6 +17,7 @@ import os
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 import constants
+from texture_utils import find_texture, humanize
 
 
 def load_categories() -> list:
@@ -38,20 +39,6 @@ def load_features() -> list:
         feature.setdefault("recipe", None)
         features.append(feature)
     return sorted(features, key=lambda feature: feature["title"])
-
-
-def humanize(key: str) -> str:
-    return key.replace("_", " ").replace("-", " ").title()
-
-
-def find_texture(key: str) -> str | None:
-    """Looks for <key>.png under each of TEXTURE_SEARCH_DIRS. Returns the
-    path as it should appear in a generated page (pages/*.html), or None."""
-    for subdir in constants.TEXTURE_SEARCH_DIRS:
-        on_disk = os.path.join(constants.TEXTURES_DIR, subdir, key + ".png")
-        if os.path.isfile(on_disk):
-            return f"../textures/{subdir}/{key}.png"
-    return None
 
 
 def build_icon_index(features: list) -> dict:
