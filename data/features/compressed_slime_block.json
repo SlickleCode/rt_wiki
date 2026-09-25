@@ -1,11 +1,14 @@
 {
   "title": "Compressed Slime Block",
   "category": "block",
-  "description": "Full documentation for Compressed Slime Block hasn't been written yet. Contributions welcome!",
+  "description": "You make compressed slime blocks by right clicking vanilla slime blocks with a shovel. Any entity that comes in contact with one gets bounced upwards. You can right click it 2 more times to compress it further, increasing its bounciness.",
   "keywords": [
     "Block",
     "Compressed",
     "Slime"
   ],
-  "images": []
+  "images": [
+    "https://lumien.net/rtwiki/images/screenshots/compressed-slime-block.png"
+  ],
+  "videos": []
 }

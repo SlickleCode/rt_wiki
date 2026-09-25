@@ -1,10 +1,16 @@
 {
   "title": "Rainbow Lamp",
   "category": "block",
-  "description": "Full documentation for Rainbow Lamp hasn't been written yet. Contributions welcome!",
+  "description": "The Rainbow Lamp is a Redstone Lamp that is always on but changes color depending on the signal strength it receives.",
   "keywords": [
     "Lamp",
     "Rainbow"
   ],
-  "images": []
+  "images": [
+    "https://lumien.net/rtwiki/images/screenshots/rainbow-lamp.png"
+  ],
+  "recipe_images": [
+    "https://lumien.net/rtwiki/images/crafting/rainbow-lamp.png"
+  ],
+  "videos": []
 }

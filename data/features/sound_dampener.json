@@ -1,10 +1,16 @@
 {
   "title": "Sound Dampener",
   "category": "block",
-  "description": "Full documentation for Sound Dampener hasn't been written yet. Contributions welcome!",
+  "description": "Sound Dampeners will prevent the sounds from the sound patterns inside of it from being played in a 20 block radius around it.",
   "keywords": [
     "Dampener",
     "Sound"
   ],
-  "images": []
+  "images": [
+    "https://lumien.net/rtwiki/images/screenshots/sound-dampener.png"
+  ],
+  "recipe_images": [
+    "https://lumien.net/rtwiki/images/crafting/sound-dampener.png"
+  ],
+  "videos": []
 }

@@ -1,10 +1,14 @@
 {
   "title": "Fertilized Dirt",
   "category": "block",
-  "description": "Full documentation for Fertilized Dirt hasn't been written yet. Contributions welcome!",
+  "description": "Works pretty much the same as vanilla farmland, except it does not require any nearby water blocks, increases the growth of plants by a factor of 3 and crops are not destroyed when walking or jumping on the Fertilized Dirt like it sometimes happens with vanilla farmland.",
   "keywords": [
     "Dirt",
     "Fertilized"
   ],
-  "images": []
+  "images": [],
+  "recipe_images": [
+    "https://lumien.net/rtwiki/images/crafting/fertilized-dirt.png"
+  ],
+  "videos": []
 }

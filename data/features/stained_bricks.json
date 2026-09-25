@@ -1,10 +1,18 @@
 {
   "title": "Stained Bricks",
   "category": "block",
-  "description": "Full documentation for Stained Bricks hasn't been written yet. Contributions welcome!",
+  "description": "Stained Bricks are colored versions of the vanilla bricks. They are also available in a Luminous Version that glows in the dark.",
   "keywords": [
     "Bricks",
     "Stained"
   ],
-  "images": []
+  "images": [
+    "https://lumien.net/rtwiki/images/screenshots/stained-bricks-1.png",
+    "https://lumien.net/rtwiki/images/screenshots/stained-bricks-2.png"
+  ],
+  "recipe_images": [
+    "https://lumien.net/rtwiki/images/crafting/stained-bricks-1.png",
+    "https://lumien.net/rtwiki/images/crafting/stained-bricks-2.png"
+  ],
+  "videos": []
 }

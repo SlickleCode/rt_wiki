@@ -55,10 +55,12 @@
       {% endif %}
     </div>
   </div>
-  {% elif feature.recipe_image %}
+  {% elif feature.recipe_images %}
   <hr/>
   <h1>Recipe</h1>
-  <img id="recipe-picture" src="{{ feature.recipe_image }}">
+  {% for recipe_image in feature.recipe_images %}
+  <img class="recipe-picture" src="{{ recipe_image }}">
+  {% endfor %}
   {% endif %}
 
   {% if feature.images or feature.videos %}

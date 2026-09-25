@@ -1,10 +1,20 @@
 {
   "title": "Position Filter",
   "category": "item",
-  "description": "Stores the XYZ coordinates of a block when right clicked. Highlights bound block in purple.",
-  "keywords": ["Position", "Filter"],
+  "description": "Position Filters can store the position of a block. Right clicking on a block sets it, while holding it in your hand the selected block will show a purple cube around it.",
+  "keywords": [
+    "Position",
+    "Filter"
+  ],
   "images": [],
   "properties": [
-    { "label": "Highlight Color", "value": "Purple" }
-  ]
+    {
+      "label": "Highlight Color",
+      "value": "Purple"
+    }
+  ],
+  "recipe_images": [
+    "https://lumien.net/rtwiki/images/crafting/position-filter.png"
+  ],
+  "videos": []
 }

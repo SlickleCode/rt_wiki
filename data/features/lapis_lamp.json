@@ -1,10 +1,14 @@
 {
   "title": "Lapis Lamp",
   "category": "block",
-  "description": "Full documentation for Lapis Lamp hasn't been written yet. Contributions welcome!",
+  "description": "The Lapis Lamp emits a light level of 15. However the light of this lamp does not prevent anything that requires darkness (e.g. Mob Spawning).",
   "keywords": [
     "Lamp",
     "Lapis"
   ],
-  "images": []
+  "images": [],
+  "recipe_images": [
+    "https://lumien.net/rtwiki/images/crafting/lapis-lamp.png"
+  ],
+  "videos": []
 }

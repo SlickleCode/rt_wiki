@@ -1,7 +1,17 @@
 {
   "title": "Redstone Activator",
   "category": "item",
-  "description": "Creates a redstone signal on a block when right clicked.",
-  "keywords": ["Redstone", "Activator", "Signal"],
-  "images": []
+  "description": "The Redstone Activator temporarily powers blocks with redstone when you right click them. For example Doors open, tnt ignites, lamps / redstone turns on.\n\nYou can change the duration of the signal between 2 / 20 / 100 Ticks by (shift)-right clicking into the air with it.",
+  "keywords": [
+    "Redstone",
+    "Activator",
+    "Signal"
+  ],
+  "images": [],
+  "recipe_images": [
+    "https://lumien.net/rtwiki/images/crafting/redstone-activator.png"
+  ],
+  "videos": [
+    "https://lumien.net/rtwiki/images/screenshots/redstone-activator.mp4"
+  ]
 }

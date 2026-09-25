@@ -17,11 +17,11 @@ in that order).
   "category": "item",                 // required, must match an id in categories.json
   "description": "...",               // required
   "keywords": ["Ender", "Pearl"],     // optional, powers the sidebar search filter
-  "images": ["images/foo.png"],       // optional, screenshot gallery (paths relative to pages/)
+  "images": ["images/foo.png"],       // optional, screenshot gallery (relative paths or full URLs)
   "videos": ["videos/foo.mp4"],       // optional, same gallery, rendered as <video>
-  "recipe_image": "images/bar.png",   // optional, a flat picture of the recipe
+  "recipe_images": ["images/bar.png"],// optional, one or more flat pictures of the recipe(s)
   "recipe": { ... },                  // optional, structured recipe (see below) - takes
-                                       // priority over recipe_image when both are set
+                                       // priority over recipe_images when both are set
   "properties": [                     // optional, freeform quick-facts table
     { "label": "Teleport Delay", "value": "7 seconds" }
   ]

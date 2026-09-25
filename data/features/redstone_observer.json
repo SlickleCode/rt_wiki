@@ -1,10 +1,16 @@
 {
   "title": "Redstone Observer",
   "category": "block",
-  "description": "Full documentation for Redstone Observer hasn't been written yet. Contributions welcome!",
+  "description": "The Redstone Observer emits redstone based on whether the block it\u2019s linked to emits redstone. To specify the target of a redstone observer you have to use a Redstone Tool . First right click on the redstone observer and then on the block you want to link it to. While holding a redstone tool you are able to see these connections as red lines as long as you are close to the block the observer is linked to.",
   "keywords": [
     "Observer",
     "Redstone"
   ],
-  "images": []
+  "images": [
+    "https://lumien.net/rtwiki/images/screenshots/redstone-observer.png"
+  ],
+  "recipe_images": [
+    "https://lumien.net/rtwiki/images/crafting/redstone-observer.png"
+  ],
+  "videos": []
 }

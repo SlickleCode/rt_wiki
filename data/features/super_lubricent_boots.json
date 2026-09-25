@@ -1,10 +1,24 @@
 {
   "title": "Super Lubricent Boots",
   "category": "item",
-  "description": "Super slippery boots",
-  "keywords": ["Super", "Lubricent", "Armor", "Boots"],
+  "description": "Wearing Super Lubricent Boots has the same effect as walking on Super Lubricent Ice, your player won\u2019t get slowed down by friction once he\u2019s moving.",
+  "keywords": [
+    "Super",
+    "Lubricent",
+    "Armor",
+    "Boots"
+  ],
   "images": [],
   "properties": [
-    { "label": "Slot", "value": "Feet" }
+    {
+      "label": "Slot",
+      "value": "Feet"
+    }
+  ],
+  "recipe_images": [
+    "https://lumien.net/rtwiki/images/crafting/super-lubricent-boots.png"
+  ],
+  "videos": [
+    "https://lumien.net/rtwiki/images/screenshots/super-lubricent-boots.mp4"
   ]
 }

@@ -1,10 +1,13 @@
 {
   "title": "Golden Egg",
   "category": "item",
-  "description": "Full documentation for Golden Egg hasn't been written yet. Contributions welcome!",
+  "description": "When thrown a Chicken with a Golden Wattle will hatch that lays gold ingots instead of eggs. There is always one inside of a Bean Pod on top of a grown Magic Bean .",
   "keywords": [
     "Egg",
     "Golden"
   ],
-  "images": []
+  "images": [
+    "https://lumien.net/rtwiki/images/screenshots/golden-egg.png"
+  ],
+  "videos": []
 }

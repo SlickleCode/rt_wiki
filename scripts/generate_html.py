@@ -34,7 +34,7 @@ def load_features() -> list:
         feature.setdefault("videos", [])
         feature.setdefault("properties", [])
         feature.setdefault("keywords", [])
-        feature.setdefault("recipe_image", None)
+        feature.setdefault("recipe_images", [])
         feature.setdefault("recipe", None)
         features.append(feature)
     return sorted(features, key=lambda feature: feature["title"])

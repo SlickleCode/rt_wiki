@@ -1,10 +1,16 @@
 {
   "title": "Rain Shield",
   "category": "block",
-  "description": "Full documentation for Rain Shield hasn't been written yet. Contributions welcome!",
+  "description": "The Rain Shield shields block in its range (5 Chunks by default, configurable) from rain. In its radius there will be no rain particles / sounds & stuff like fire that would normally react to rain will act as if it wasn\u2019t raining.\nBy applying a redstone signal to it you can disable its effect. There will also be no snow forming on top of blocks in snowy biomes.",
   "keywords": [
     "Rain",
     "Shield"
   ],
-  "images": []
+  "images": [],
+  "recipe_images": [
+    "https://lumien.net/rtwiki/images/crafting/rain-shield.png"
+  ],
+  "videos": [
+    "https://lumien.net/rtwiki/images/screenshots/rain-shield.mp4"
+  ]
 }

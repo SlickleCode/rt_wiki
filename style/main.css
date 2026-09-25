@@ -58,6 +58,7 @@ img {
     font-weight: 400;
     line-height: 1.5;
     overflow-wrap: break-word;
+    white-space: pre-line;
 }
 
 .master-container {
@@ -344,9 +345,10 @@ img {
     max-width: 768px;
 }
 
-#recipe-picture {
+.recipe-picture {
+    display: block;
     max-width: 768px;
-    margin: auto;
+    margin: 0 auto 20px;
 }
 
 @keyframes slide-in {

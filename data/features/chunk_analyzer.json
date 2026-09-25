@@ -1,10 +1,16 @@
 {
   "title": "Chunk Analyzer",
   "category": "item",
-  "description": "Full documentation for Chunk Analyzer hasn't been written yet. Contributions welcome!",
+  "description": "The Chunk Analyzer allows you to check what blocks a chunk contains. Open its gui and press Scan. After a few seconds you will get the results for the chunk you are in.",
   "keywords": [
     "Analyzer",
     "Chunk"
   ],
-  "images": []
+  "images": [
+    "https://lumien.net/rtwiki/images/screenshots/chunk-analyzer.png"
+  ],
+  "recipe_images": [
+    "https://lumien.net/rtwiki/images/crafting/chunk-analyzer.png"
+  ],
+  "videos": []
 }
