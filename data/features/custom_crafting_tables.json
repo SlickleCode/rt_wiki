@@ -8,12 +8,12 @@
     "Tables"
   ],
   "images": [
-    "https://lumien.net/rtwiki/images/screenshots/custom-crafting-tables.png"
+    "images/custom-crafting-tables.png"
   ],
   "recipe_images": [
-    "https://lumien.net/rtwiki/images/crafting/custom-crafting-tables-1.png",
-    "https://lumien.net/rtwiki/images/crafting/custom-crafting-tables-2.png",
-    "https://lumien.net/rtwiki/images/crafting/custom-crafting-tables-3.png"
+    "images/crafting-custom-crafting-tables-1.png",
+    "images/crafting-custom-crafting-tables-2.png",
+    "images/crafting-custom-crafting-tables-3.png"
   ],
   "videos": []
 }

@@ -8,10 +8,10 @@
   ],
   "images": [],
   "recipe_images": [
-    "https://lumien.net/rtwiki/images/crafting/spectre-tools-1.png",
-    "https://lumien.net/rtwiki/images/crafting/spectre-tools-2.png",
-    "https://lumien.net/rtwiki/images/crafting/spectre-tools-3.png",
-    "https://lumien.net/rtwiki/images/crafting/spectre-tools-4.png"
+    "images/crafting-spectre-tools-1.png",
+    "images/crafting-spectre-tools-2.png",
+    "images/crafting-spectre-tools-3.png",
+    "images/crafting-spectre-tools-4.png"
   ],
   "videos": []
 }

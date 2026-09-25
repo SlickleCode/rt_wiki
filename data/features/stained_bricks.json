@@ -7,12 +7,12 @@
     "Stained"
   ],
   "images": [
-    "https://lumien.net/rtwiki/images/screenshots/stained-bricks-1.png",
-    "https://lumien.net/rtwiki/images/screenshots/stained-bricks-2.png"
+    "images/stained-bricks-1.png",
+    "images/stained-bricks-2.png"
   ],
   "recipe_images": [
-    "https://lumien.net/rtwiki/images/crafting/stained-bricks-1.png",
-    "https://lumien.net/rtwiki/images/crafting/stained-bricks-2.png"
+    "images/crafting-stained-bricks-1.png",
+    "images/crafting-stained-bricks-2.png"
   ],
   "videos": []
 }

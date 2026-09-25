@@ -8,9 +8,9 @@
   ],
   "images": [],
   "recipe_images": [
-    "https://lumien.net/rtwiki/images/crafting/spectre-charger.png",
-    "https://lumien.net/rtwiki/images/crafting/spectre-charger-redstone.png",
-    "https://lumien.net/rtwiki/images/crafting/spectre-charger-ender.png"
+    "images/crafting-spectre-charger.png",
+    "images/crafting-spectre-charger-redstone.png",
+    "images/crafting-spectre-charger-ender.png"
   ],
   "videos": []
 }

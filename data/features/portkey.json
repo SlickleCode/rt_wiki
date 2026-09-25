@@ -6,10 +6,10 @@
     "Portkey"
   ],
   "images": [
-    "https://lumien.net/rtwiki/images/screenshots/portkey.png"
+    "images/portkey.png"
   ],
   "recipe_images": [
-    "https://lumien.net/rtwiki/images/crafting/portkey.png"
+    "images/crafting-portkey.png"
   ],
   "videos": []
 }

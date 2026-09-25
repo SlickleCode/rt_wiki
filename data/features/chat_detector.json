@@ -7,12 +7,12 @@
     "Detector"
   ],
   "images": [
-    "https://lumien.net/rtwiki/images/screenshots/chat-detector-1.png",
-    "https://lumien.net/rtwiki/images/screenshots/chat-detector-2.png"
+    "images/chat-detector-1.png",
+    "images/chat-detector-2.png"
   ],
   "recipe_images": [
-    "https://lumien.net/rtwiki/images/crafting/chat-detector-1.png",
-    "https://lumien.net/rtwiki/images/crafting/chat-detector-2.png"
+    "images/crafting-chat-detector-1.png",
+    "images/crafting-chat-detector-2.png"
   ],
   "videos": []
 }

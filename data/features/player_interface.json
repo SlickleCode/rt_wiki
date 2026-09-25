@@ -7,13 +7,13 @@
     "Player"
   ],
   "images": [
-    "https://lumien.net/rtwiki/images/screenshots/player-interface-1.png",
-    "https://lumien.net/rtwiki/images/screenshots/player-interface-2.png",
-    "https://lumien.net/rtwiki/images/screenshots/player-interface-3.png",
-    "https://lumien.net/rtwiki/images/screenshots/player-interface-4.png"
+    "images/player-interface-1.png",
+    "images/player-interface-2.png",
+    "images/player-interface-3.png",
+    "images/player-interface-4.png"
   ],
   "recipe_images": [
-    "https://lumien.net/rtwiki/images/crafting/player-interface.png"
+    "images/crafting-player-interface.png"
   ],
   "videos": []
 }

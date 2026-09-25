@@ -7,10 +7,10 @@
     "Breaker"
   ],
   "images": [
-    "https://lumien.net/rtwiki/images/screenshots/block-breaker.png"
+    "images/block-breaker.png"
   ],
   "recipe_images": [
-    "https://lumien.net/rtwiki/images/crafting/block-breaker.png"
+    "images/crafting-block-breaker.png"
   ],
   "videos": []
 }

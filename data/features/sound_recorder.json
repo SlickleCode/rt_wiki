@@ -7,10 +7,10 @@
     "Sound"
   ],
   "images": [
-    "https://lumien.net/rtwiki/images/screenshots/sound-recorder.png"
+    "images/sound-recorder.png"
   ],
   "recipe_images": [
-    "https://lumien.net/rtwiki/images/crafting/sound-recorder.png"
+    "images/crafting-sound-recorder.png"
   ],
   "videos": []
 }

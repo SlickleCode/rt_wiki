@@ -7,10 +7,10 @@
     "Chunk"
   ],
   "images": [
-    "https://lumien.net/rtwiki/images/screenshots/chunk-analyzer.png"
+    "images/chunk-analyzer.png"
   ],
   "recipe_images": [
-    "https://lumien.net/rtwiki/images/crafting/chunk-analyzer.png"
+    "images/crafting-chunk-analyzer.png"
   ],
   "videos": []
 }

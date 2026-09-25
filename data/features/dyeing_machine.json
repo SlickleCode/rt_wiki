@@ -7,11 +7,11 @@
     "Machine"
   ],
   "images": [
-    "https://lumien.net/rtwiki/images/screenshots/dyeing-machine-1.png",
-    "https://lumien.net/rtwiki/images/screenshots/dyeing-machine-2.png"
+    "images/dyeing-machine-1.png",
+    "images/dyeing-machine-2.png"
   ],
   "recipe_images": [
-    "https://lumien.net/rtwiki/images/crafting/dyeing-machine.png"
+    "images/crafting-dyeing-machine.png"
   ],
   "videos": []
 }

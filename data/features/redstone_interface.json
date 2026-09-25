@@ -7,12 +7,12 @@
     "Redstone"
   ],
   "images": [
-    "https://lumien.net/rtwiki/images/screenshots/redstone-interface-1.png",
-    "https://lumien.net/rtwiki/images/screenshots/redstone-interface-2.png"
+    "images/redstone-interface-1.png",
+    "images/redstone-interface-2.png"
   ],
   "recipe_images": [
-    "https://lumien.net/rtwiki/images/crafting/redstone-interface-1.png",
-    "https://lumien.net/rtwiki/images/crafting/redstone-interface-2.png"
+    "images/crafting-redstone-interface-1.png",
+    "images/crafting-redstone-interface-2.png"
   ],
   "videos": []
 }

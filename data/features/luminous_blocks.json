@@ -7,12 +7,12 @@
     "Luminous"
   ],
   "images": [
-    "https://lumien.net/rtwiki/images/screenshots/luminous-blocks-1.png",
-    "https://lumien.net/rtwiki/images/screenshots/luminous-blocks-2.png"
+    "images/luminous-blocks-1.png",
+    "images/luminous-blocks-2.png"
   ],
   "recipe_images": [
-    "https://lumien.net/rtwiki/images/crafting/luminous-blocks-1.png",
-    "https://lumien.net/rtwiki/images/crafting/luminous-blocks-2.png"
+    "images/crafting-luminous-blocks-1.png",
+    "images/crafting-luminous-blocks-2.png"
   ],
   "videos": []
 }

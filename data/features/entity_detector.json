@@ -7,10 +7,10 @@
     "Entity"
   ],
   "images": [
-    "https://lumien.net/rtwiki/images/screenshots/entity-detector.png"
+    "images/entity-detector.png"
   ],
   "recipe_images": [
-    "https://lumien.net/rtwiki/images/crafting/entity-detector.png"
+    "images/crafting-entity-detector.png"
   ],
   "videos": []
 }

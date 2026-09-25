@@ -8,12 +8,12 @@
   ],
   "images": [],
   "recipe_images": [
-    "https://lumien.net/rtwiki/images/crafting/biome-blocks-1.png",
-    "https://lumien.net/rtwiki/images/crafting/biome-blocks-2.png",
-    "https://lumien.net/rtwiki/images/crafting/biome-blocks-3.png",
-    "https://lumien.net/rtwiki/images/crafting/biome-blocks-4.png",
-    "https://lumien.net/rtwiki/images/crafting/biome-blocks-5.png",
-    "https://lumien.net/rtwiki/images/crafting/biome-blocks-6.png"
+    "images/crafting-biome-blocks-1.png",
+    "images/crafting-biome-blocks-2.png",
+    "images/crafting-biome-blocks-3.png",
+    "images/crafting-biome-blocks-4.png",
+    "images/crafting-biome-blocks-5.png",
+    "images/crafting-biome-blocks-6.png"
   ],
   "videos": []
 }

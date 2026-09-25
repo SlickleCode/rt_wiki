@@ -7,12 +7,12 @@
     "Runic"
   ],
   "images": [
-    "https://lumien.net/rtwiki/images/screenshots/runic-dust-1.png"
+    "images/runic-dust-1.png"
   ],
   "recipe_images": [
-    "https://lumien.net/rtwiki/images/crafting/runic-dust.png"
+    "images/crafting-runic-dust.png"
   ],
   "videos": [
-    "https://lumien.net/rtwiki/images/screenshots/runic-dust-2.mp4"
+    "videos/runic-dust-2.mp4"
   ]
 }

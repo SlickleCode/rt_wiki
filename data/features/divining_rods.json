@@ -8,16 +8,16 @@
   ],
   "images": [],
   "recipe_images": [
-    "https://lumien.net/rtwiki/images/crafting/divining-rods-coal.png",
-    "https://lumien.net/rtwiki/images/crafting/divining-rods-diamond.png",
-    "https://lumien.net/rtwiki/images/crafting/divining-rods-emerald.png",
-    "https://lumien.net/rtwiki/images/crafting/divining-rods-gold.png",
-    "https://lumien.net/rtwiki/images/crafting/divining-rods-iron.png",
-    "https://lumien.net/rtwiki/images/crafting/divining-rods-lapis.png",
-    "https://lumien.net/rtwiki/images/crafting/divining-rods-redstone.png",
-    "https://lumien.net/rtwiki/images/crafting/divining-rods-universal.png"
+    "images/crafting-divining-rods-coal.png",
+    "images/crafting-divining-rods-diamond.png",
+    "images/crafting-divining-rods-emerald.png",
+    "images/crafting-divining-rods-gold.png",
+    "images/crafting-divining-rods-iron.png",
+    "images/crafting-divining-rods-lapis.png",
+    "images/crafting-divining-rods-redstone.png",
+    "images/crafting-divining-rods-universal.png"
   ],
   "videos": [
-    "https://lumien.net/rtwiki/images/screenshots/divining-rods.mp4"
+    "videos/divining-rods.mp4"
   ]
 }

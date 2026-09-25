@@ -7,10 +7,10 @@
     "Redstone"
   ],
   "images": [
-    "https://lumien.net/rtwiki/images/screenshots/redstone-observer.png"
+    "images/redstone-observer.png"
   ],
   "recipe_images": [
-    "https://lumien.net/rtwiki/images/crafting/redstone-observer.png"
+    "images/crafting-redstone-observer.png"
   ],
   "videos": []
 }

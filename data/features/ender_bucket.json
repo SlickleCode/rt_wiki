@@ -8,8 +8,8 @@
   ],
   "images": [],
   "recipe_images": [
-    "https://lumien.net/rtwiki/images/crafting/ender-bucket.png",
-    "https://lumien.net/rtwiki/images/crafting/ender-bucket-reinforced.png"
+    "images/crafting-ender-bucket.png",
+    "images/crafting-ender-bucket-reinforced.png"
   ],
   "videos": []
 }

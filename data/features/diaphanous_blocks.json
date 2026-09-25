@@ -8,11 +8,11 @@
   ],
   "images": [],
   "recipe_images": [
-    "https://lumien.net/rtwiki/images/crafting/diaphanous-blocks-3.png",
-    "https://lumien.net/rtwiki/images/crafting/diaphanous-blocks-2.png",
-    "https://lumien.net/rtwiki/images/crafting/diaphanous-blocks-1.png"
+    "images/crafting-diaphanous-blocks-3.png",
+    "images/crafting-diaphanous-blocks-2.png",
+    "images/crafting-diaphanous-blocks-1.png"
   ],
   "videos": [
-    "https://lumien.net/rtwiki/images/screenshots/diaphanous-blocks.mp4"
+    "videos/diaphanous-blocks.mp4"
   ]
 }

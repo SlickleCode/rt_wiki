@@ -7,13 +7,13 @@
     "Spectre"
   ],
   "images": [
-    "https://lumien.net/rtwiki/images/screenshots/spectre-coils.png"
+    "images/spectre-coils.png"
   ],
   "recipe_images": [
-    "https://lumien.net/rtwiki/images/crafting/spectre-energy-injector.png",
-    "https://lumien.net/rtwiki/images/crafting/spectre-coils-normal.png",
-    "https://lumien.net/rtwiki/images/crafting/spectre-coils-redstone.png",
-    "https://lumien.net/rtwiki/images/crafting/spectre-coils-ender.png"
+    "images/crafting-spectre-energy-injector.png",
+    "images/crafting-spectre-coils-normal.png",
+    "images/crafting-spectre-coils-redstone.png",
+    "images/crafting-spectre-coils-ender.png"
   ],
   "videos": []
 }

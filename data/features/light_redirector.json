@@ -8,10 +8,10 @@
   ],
   "images": [],
   "recipe_images": [
-    "https://lumien.net/rtwiki/images/crafting/light-redirector.png"
+    "images/crafting-light-redirector.png"
   ],
   "videos": [
-    "https://lumien.net/rtwiki/images/screenshots/light-redirector-1.mp4",
-    "https://lumien.net/rtwiki/images/screenshots/light-redirector-2.mp4"
+    "videos/light-redirector-1.mp4",
+    "videos/light-redirector-2.mp4"
   ]
 }

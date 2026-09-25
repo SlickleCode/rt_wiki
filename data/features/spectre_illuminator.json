@@ -8,10 +8,10 @@
   ],
   "images": [],
   "recipe_images": [
-    "https://lumien.net/rtwiki/images/crafting/spectre-illuminator.png",
-    "https://lumien.net/rtwiki/images/crafting/blackout-powder.png"
+    "images/crafting-spectre-illuminator.png",
+    "images/crafting-blackout-powder.png"
   ],
   "videos": [
-    "https://lumien.net/rtwiki/images/screenshots/spectre-illuminator.mp4"
+    "videos/spectre-illuminator.mp4"
   ]
 }

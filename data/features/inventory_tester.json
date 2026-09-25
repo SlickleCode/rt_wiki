@@ -7,10 +7,10 @@
     "Tester"
   ],
   "images": [
-    "https://lumien.net/rtwiki/images/screenshots/inventory-tester.png"
+    "images/inventory-tester.png"
   ],
   "recipe_images": [
-    "https://lumien.net/rtwiki/images/crafting/inventory-tester.png"
+    "images/crafting-inventory-tester.png"
   ],
   "videos": []
 }

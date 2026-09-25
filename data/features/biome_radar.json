@@ -7,10 +7,10 @@
     "Radar"
   ],
   "images": [
-    "https://lumien.net/rtwiki/images/screenshots/biome-radar.png"
+    "images/biome-radar.png"
   ],
   "recipe_images": [
-    "https://lumien.net/rtwiki/images/crafting/biome-radar.png"
+    "images/crafting-biome-radar.png"
   ],
   "videos": []
 }

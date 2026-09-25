@@ -7,12 +7,12 @@
     "Ender"
   ],
   "images": [
-    "https://lumien.net/rtwiki/images/screenshots/ender-bridge.png"
+    "images/ender-bridge.png"
   ],
   "recipe_images": [
-    "https://lumien.net/rtwiki/images/crafting/ender-bridge-1.png",
-    "https://lumien.net/rtwiki/images/crafting/ender-bridge-2.png",
-    "https://lumien.net/rtwiki/images/crafting/ender-bridge-3.png"
+    "images/crafting-ender-bridge-1.png",
+    "images/crafting-ender-bridge-2.png",
+    "images/crafting-ender-bridge-3.png"
   ],
   "videos": []
 }

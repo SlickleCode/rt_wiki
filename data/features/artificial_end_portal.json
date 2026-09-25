@@ -8,11 +8,11 @@
     "Portal"
   ],
   "images": [
-    "https://lumien.net/rtwiki/images/screenshots/artificial-end-portal-1.png",
-    "https://lumien.net/rtwiki/images/screenshots/artificial-end-portal-2.png"
+    "images/artificial-end-portal-1.png",
+    "images/artificial-end-portal-2.png"
   ],
   "recipe_images": [
-    "https://lumien.net/rtwiki/images/crafting/artificial-end-portal.png"
+    "images/crafting-artificial-end-portal.png"
   ],
   "videos": []
 }

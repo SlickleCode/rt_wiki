@@ -7,10 +7,10 @@
     "Item"
   ],
   "images": [
-    "https://lumien.net/rtwiki/images/screenshots/item-filter.png"
+    "images/item-filter.png"
   ],
   "recipe_images": [
-    "https://lumien.net/rtwiki/images/crafting/item-filter.png"
+    "images/crafting-item-filter.png"
   ],
   "videos": []
 }

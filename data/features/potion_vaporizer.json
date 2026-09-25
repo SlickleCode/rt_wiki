@@ -7,10 +7,10 @@
     "Vaporizer"
   ],
   "images": [
-    "https://lumien.net/rtwiki/images/screenshots/potion-vaporizer.png"
+    "images/potion-vaporizer.png"
   ],
   "recipe_images": [
-    "https://lumien.net/rtwiki/images/crafting/potion-vaporizer.png"
+    "images/crafting-potion-vaporizer.png"
   ],
   "videos": []
 }

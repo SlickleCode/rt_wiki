@@ -7,15 +7,15 @@
     "Teleportation"
   ],
   "images": [
-    "https://lumien.net/rtwiki/images/screenshots/floo-teleportation-1.png",
-    "https://lumien.net/rtwiki/images/screenshots/floo-teleportation-2.png",
-    "https://lumien.net/rtwiki/images/screenshots/floo-teleportation-3.png"
+    "images/floo-teleportation-1.png",
+    "images/floo-teleportation-2.png",
+    "images/floo-teleportation-3.png"
   ],
   "recipe_images": [
-    "https://lumien.net/rtwiki/images/crafting/floo-teleportation-1.png",
-    "https://lumien.net/rtwiki/images/crafting/floo-teleportation-2.png",
-    "https://lumien.net/rtwiki/images/crafting/floo-teleportation-3.png",
-    "https://lumien.net/rtwiki/images/crafting/floo-pouch.png"
+    "images/crafting-floo-teleportation-1.png",
+    "images/crafting-floo-teleportation-2.png",
+    "images/crafting-floo-teleportation-3.png",
+    "images/crafting-floo-pouch.png"
   ],
   "videos": []
 }

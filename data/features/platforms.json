@@ -7,12 +7,12 @@
   ],
   "images": [],
   "recipe_images": [
-    "https://lumien.net/rtwiki/images/crafting/platforms-1.png",
-    "https://lumien.net/rtwiki/images/crafting/platforms-2.png",
-    "https://lumien.net/rtwiki/images/crafting/platforms-3.png",
-    "https://lumien.net/rtwiki/images/crafting/platforms-4.png",
-    "https://lumien.net/rtwiki/images/crafting/platforms-5.png",
-    "https://lumien.net/rtwiki/images/crafting/platforms-6.png"
+    "images/crafting-platforms-1.png",
+    "images/crafting-platforms-2.png",
+    "images/crafting-platforms-3.png",
+    "images/crafting-platforms-4.png",
+    "images/crafting-platforms-5.png",
+    "images/crafting-platforms-6.png"
   ],
   "videos": []
 }

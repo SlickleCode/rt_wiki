@@ -7,10 +7,10 @@
     "Rainbow"
   ],
   "images": [
-    "https://lumien.net/rtwiki/images/screenshots/rainbow-lamp.png"
+    "images/rainbow-lamp.png"
   ],
   "recipe_images": [
-    "https://lumien.net/rtwiki/images/crafting/rainbow-lamp.png"
+    "images/crafting-rainbow-lamp.png"
   ],
   "videos": []
 }

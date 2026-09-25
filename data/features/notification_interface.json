@@ -7,10 +7,10 @@
     "Notification"
   ],
   "images": [
-    "https://lumien.net/rtwiki/images/screenshots/notification-interface.png"
+    "images/notification-interface.png"
   ],
   "recipe_images": [
-    "https://lumien.net/rtwiki/images/crafting/notification-interface.png"
+    "images/crafting-notification-interface.png"
   ],
   "videos": []
 }

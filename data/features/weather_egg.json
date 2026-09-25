@@ -8,7 +8,7 @@
     "Throwable"
   ],
   "images": [
-    "https://lumien.net/rtwiki/images/screenshots/weather-eggs.png"
+    "images/weather-eggs.png"
   ],
   "properties": [
     {
@@ -17,9 +17,9 @@
     }
   ],
   "recipe_images": [
-    "https://lumien.net/rtwiki/images/crafting/weather-eggs-sun.png",
-    "https://lumien.net/rtwiki/images/crafting/weather-eggs-rain.png",
-    "https://lumien.net/rtwiki/images/crafting/weather-eggs-storm.png"
+    "images/crafting-weather-eggs-sun.png",
+    "images/crafting-weather-eggs-rain.png",
+    "images/crafting-weather-eggs-storm.png"
   ],
   "videos": []
 }

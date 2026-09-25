@@ -8,10 +8,10 @@
   ],
   "images": [],
   "recipe_images": [
-    "https://lumien.net/rtwiki/images/crafting/beans-1.png",
-    "https://lumien.net/rtwiki/images/crafting/beans-2.png"
+    "images/crafting-beans-1.png",
+    "images/crafting-beans-2.png"
   ],
   "videos": [
-    "https://lumien.net/rtwiki/images/screenshots/beans.mp4"
+    "videos/beans.mp4"
   ]
 }

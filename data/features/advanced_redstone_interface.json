@@ -8,10 +8,10 @@
     "Redstone"
   ],
   "images": [
-    "https://lumien.net/rtwiki/images/screenshots/advanced-redstone-interface.png"
+    "images/advanced-redstone-interface.png"
   ],
   "recipe_images": [
-    "https://lumien.net/rtwiki/images/crafting/advanced-redstone-interface.png"
+    "images/crafting-advanced-redstone-interface.png"
   ],
   "videos": []
 }
