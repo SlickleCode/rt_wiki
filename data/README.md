@@ -2,7 +2,7 @@
 
 This is the single source of truth for everything the wiki documents. `scripts/generate_html.py`
 reads it and produces the static pages under `docs/`. Nothing here should ever need a template
-or generator change to use — adding new content is just adding data.
+or generator change to use - adding new content is just adding data.
 
 ## Adding a feature
 

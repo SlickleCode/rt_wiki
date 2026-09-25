@@ -1,7 +1,7 @@
 {
   "title": "Advanced Redstone Torch",
   "category": "block",
-  "description": "Unlike a normal redstone torch which just emits either a redstone signal of 15 or 0 with an advanced one you can configure the signal strength for the two states freely. It\u2019s green while powered and red while unpowered.",
+  "description": "Unlike a normal redstone torch which just emits either a redstone signal of 15 or 0 with an advanced one you can configure the signal strength for the two states freely. It's green while powered and red while unpowered.",
   "keywords": [
     "Redstone",
     "Torch",

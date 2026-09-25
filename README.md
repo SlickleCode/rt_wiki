@@ -24,7 +24,7 @@ schema instead of hand-written HTML per page.
 
 ## Deployment (GitHub Pages)
 
-The site is served straight from the `docs/` folder on `master` (repo Settings → Pages → Source:
+The site is served straight from the `docs/` folder on `master` (repo Settings -> Pages -> Source:
 `master` / `/docs`), so `docs/` is the actual site root everything gets requested relative to.
 That's why `docs/style/`, `docs/js/`, and `docs/textures/` live inside `docs/` rather than at the
 repo root - anything the generated pages need to load in a browser has to be under `docs/`, or
