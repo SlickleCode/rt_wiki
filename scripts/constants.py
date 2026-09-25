@@ -1,14 +1,22 @@
-# Paths are relative to this script's working directory (scripts/)
-DATA_DIR = "../data"
-FEATURES_DIR = DATA_DIR + "/features"
-CATEGORIES_FILE = DATA_DIR + "/categories.json"
-VANILLA_TEXTURE_OVERRIDES_FILE = DATA_DIR + "/vanilla_texture_names.json"
+import os
 
-TEMPLATE_DIR = "../template-html"
-OUTPUT_DIR = "../docs"
-TEXTURES_DIR = OUTPUT_DIR + "/textures"
-OUTPUT_IMAGES_DIR = OUTPUT_DIR + "/images"
-OUTPUT_VIDEOS_DIR = OUTPUT_DIR + "/videos"
+# Resolved from this file's own location rather than the current working
+# directory, so every script here runs the same whether it's invoked as
+# `python3 generate_html.py` from inside scripts/, `python3 scripts/generate_html.py`
+# from the repo root (e.g. the GitHub Actions workflow), or by an absolute path.
+SCRIPTS_DIR = os.path.dirname(os.path.abspath(__file__))
+REPO_ROOT = os.path.dirname(SCRIPTS_DIR)
+
+DATA_DIR = os.path.join(REPO_ROOT, "data")
+FEATURES_DIR = os.path.join(DATA_DIR, "features")
+CATEGORIES_FILE = os.path.join(DATA_DIR, "categories.json")
+VANILLA_TEXTURE_OVERRIDES_FILE = os.path.join(DATA_DIR, "vanilla_texture_names.json")
+
+TEMPLATE_DIR = os.path.join(REPO_ROOT, "template-html")
+OUTPUT_DIR = os.path.join(REPO_ROOT, "docs")
+TEXTURES_DIR = os.path.join(OUTPUT_DIR, "textures")
+OUTPUT_IMAGES_DIR = os.path.join(OUTPUT_DIR, "images")
+OUTPUT_VIDEOS_DIR = os.path.join(OUTPUT_DIR, "videos")
 
 # Subdirectory (relative to TEXTURES_DIR) that downloaded vanilla Minecraft
 # icons land in. Listed last in TEXTURE_SEARCH_DIRS so a mod's own texture
