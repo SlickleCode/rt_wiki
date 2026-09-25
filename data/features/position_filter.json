@@ -1,0 +1,10 @@
+{
+  "title": "Position Filter",
+  "category": "item",
+  "description": "Stores the XYZ coordinates of a block when right clicked. Highlights bound block in purple.",
+  "keywords": ["Position", "Filter"],
+  "images": [],
+  "properties": [
+    { "label": "Highlight Color", "value": "Purple" }
+  ]
+}

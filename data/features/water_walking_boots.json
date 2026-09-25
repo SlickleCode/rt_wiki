@@ -1,0 +1,11 @@
+{
+  "title": "Water Walking Boots",
+  "category": "armor",
+  "description": "Allows you to walk on water! Press Shift to go below the surface",
+  "keywords": ["Water", "Armor", "Boots"],
+  "images": [],
+  "properties": [
+    { "label": "Slot", "value": "Feet" },
+    { "label": "Ability", "value": "Walk on water; hold Shift to submerge" }
+  ]
+}

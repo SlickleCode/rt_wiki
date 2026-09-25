@@ -1,0 +1,10 @@
+{
+  "title": "Weather Egg",
+  "category": "item",
+  "description": "When thrown, will create whatever weather effect the egg has: Clear, Rain, Storm",
+  "keywords": ["Weather", "Egg", "Throwable"],
+  "images": [],
+  "properties": [
+    { "label": "Weather Effects", "value": "Clear, Rain, Storm" }
+  ]
+}

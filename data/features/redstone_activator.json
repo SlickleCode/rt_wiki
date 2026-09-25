@@ -1,0 +1,7 @@
+{
+  "title": "Redstone Activator",
+  "category": "item",
+  "description": "Creates a redstone signal on a block when right clicked.",
+  "keywords": ["Redstone", "Activator", "Signal"],
+  "images": []
+}

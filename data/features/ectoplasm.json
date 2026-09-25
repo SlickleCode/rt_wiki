@@ -1,0 +1,10 @@
+{
+  "title": "Ectoplasm",
+  "category": "item",
+  "description": "Dropped from Spirits when killed. Used to create Spectre items",
+  "keywords": ["Ectoplasm", "Spectre", "Spirit"],
+  "images": [],
+  "properties": [
+    { "label": "Obtained From", "value": "Spirits (mob drop)" }
+  ]
+}

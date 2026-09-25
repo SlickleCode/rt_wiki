@@ -1,7 +1,26 @@
 window.onload = function() {
     document.getElementById("open-sidebar").addEventListener("click", openSidebar);
     document.getElementById("close-sidebar").addEventListener("click", closeSidebar);
+    document.getElementById("search-field").addEventListener("input", filterSidebar);
     window.onresize = removeMobileSidebarClasses;
+}
+
+function filterSidebar(event) {
+    let query = event.target.value.trim().toLowerCase();
+    let sidebar = document.getElementById("sidebar-item-list");
+    let headers = sidebar.getElementsByClassName("sidebar-header-item");
+
+    for (let header of headers) {
+        let visibleCount = 0;
+        let node = header.nextElementSibling;
+        while (node && !node.classList.contains("sidebar-header-item")) {
+            let matches = query === "" || node.dataset.keywords.includes(query);
+            node.style.display = matches ? "" : "none";
+            if (matches) visibleCount++;
+            node = node.nextElementSibling;
+        }
+        header.style.display = visibleCount > 0 ? "" : "none";
+    }
 }
 
 function openSidebar() {

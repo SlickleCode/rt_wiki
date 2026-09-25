@@ -17,24 +17,19 @@ jobs:
     # Checks-out repository under $GITHUB_WORKSPACE, so the job can access it
     - uses: actions/checkout@v2
 
-    # Run using Python 3.8 for consistency
-    - name: Set up Python 3.8
+    # Run using Python 3.11 for consistency
+    - name: Set up Python 3.11
       uses: actions/setup-python@v2
       with:
-        python-version: '3.8'
+        python-version: '3.11'
         architecture: 'x64'
 
-    - name: Clean directory
-      run: |
-        rm -r generated-html || echo
-        mkdir generated-html
+    - name: Install dependencies
+      run: pip install -r scripts/requirements.txt
 
-    # Generate html from json
-    # Pass in auto_generated access token from github actions
+    # Generate html pages from data/features/*.json
     - name: Generate html
-      run: 
-        pip install beautifulsoup4
-        python3 ./scripts/generate_html.py
+      run: python3 ./scripts/generate_html.py
 
     # Commits all changes to the repo
     # "echo" returns true so the build succeeds, even if no changed files

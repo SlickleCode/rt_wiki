@@ -1,0 +1,10 @@
+{
+  "title": "Super Lubricent Boots",
+  "category": "armor",
+  "description": "Super slippery boots",
+  "keywords": ["Super", "Lubricent", "Armor", "Boots"],
+  "images": [],
+  "properties": [
+    { "label": "Slot", "value": "Feet" }
+  ]
+}
