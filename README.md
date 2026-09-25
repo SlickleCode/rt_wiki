@@ -5,9 +5,9 @@ schema instead of hand-written HTML per page.
 
 ## How it works
 
-- `data/features/*.json` - one file per mod feature (item, block, armor piece, etc). This is the
+- `data/features/*.json` - one file per mod feature (item, block, misc, etc). This is the
   only place content lives. See `data/README.md` for the schema.
-- `data/categories.json` - the sidebar sections (Items, Blocks, Armor, ...). Add a category here
+- `data/categories.json` - the sidebar sections (Items, Blocks, Misc, ...). Add a category here
   and any feature using it is picked up automatically, no template changes needed.
 - `template-html/*.html` - Jinja2 templates (`base.html` for the page chrome, `sidebar.html` for
   the nav, `page.html` for a single feature, `index.html` for the homepage).
