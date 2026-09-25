@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Builds the static wiki pages under pages/ from the reusable feature data in
+Builds the static wiki pages under docs/ from the reusable feature data in
 data/features/*.json, using the Jinja2 templates in template-html/.
 
 Adding a new mod feature to the wiki means dropping a new JSON file into

@@ -6,7 +6,7 @@ VANILLA_TEXTURE_OVERRIDES_FILE = DATA_DIR + "/vanilla_texture_names.json"
 
 TEMPLATE_DIR = "../template-html"
 TEXTURES_DIR = "../textures"
-OUTPUT_DIR = "../pages"
+OUTPUT_DIR = "../docs"
 OUTPUT_IMAGES_DIR = OUTPUT_DIR + "/images"
 OUTPUT_VIDEOS_DIR = OUTPUT_DIR + "/videos"
 

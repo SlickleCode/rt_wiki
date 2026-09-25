@@ -12,7 +12,7 @@ schema instead of hand-written HTML per page.
 - `template-html/*.html` - Jinja2 templates (`base.html` for the page chrome, `sidebar.html` for
   the nav, `page.html` for a single feature, `index.html` for the homepage).
 - `scripts/generate_html.py` - reads the data, renders the templates, and writes static pages into
-  `pages/`. Run it with:
+  `docs/`. Run it with:
 
   ```
   pip install -r scripts/requirements.txt
@@ -20,7 +20,7 @@ schema instead of hand-written HTML per page.
   ```
 
 - `.github/workflows/generate-html.yml` runs the same generator on every push and commits the
-  regenerated `pages/` back into the repo.
+  regenerated `docs/` back into the repo.
 
 ## Adding a new feature to the wiki
 

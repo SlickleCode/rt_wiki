@@ -1,13 +1,13 @@
 # Mod feature data
 
 This is the single source of truth for everything the wiki documents. `scripts/generate_html.py`
-reads it and produces the static pages under `pages/`. Nothing here should ever need a template
+reads it and produces the static pages under `docs/`. Nothing here should ever need a template
 or generator change to use — adding new content is just adding data.
 
 ## Adding a feature
 
 Drop a new file at `data/features/<id>.json`. The filename (without `.json`) becomes the
-feature's id, its output filename (`pages/<id>.html`), and the key used to auto-resolve an icon
+feature's id, its output filename (`docs/<id>.html`), and the key used to auto-resolve an icon
 (`textures/item/<id>.png`, `textures/block/<id>.png`, or `textures/models/armor/<id>.png`, checked
 in that order).
 
@@ -84,6 +84,6 @@ whatever they download/change:
 - **`scripts/fetch_lumien_assets.py`** finds every `images`/`videos`/`recipe_images` entry still
   pointing at a `lumien.net` URL (left there because this repo's content was migrated from
   lumien.net/rtwiki and its pictures/videos haven't all been re-hosted here yet), downloads it
-  into `pages/images/` or `pages/videos/`, and rewrites the feature's JSON to point at the local
+  into `docs/images/` or `docs/videos/`, and rewrites the feature's JSON to point at the local
   copy. `--dry-run` lists what it would fetch; `--force` re-downloads files that already exist
   locally.

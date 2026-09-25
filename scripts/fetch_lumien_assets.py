@@ -2,7 +2,7 @@
 """
 Downloads every lumien.net-hosted image/video referenced in
 data/features/*.json (the "images", "videos", and "recipe_images" fields)
-into pages/images/ or pages/videos/, and rewrites each feature's JSON to
+into docs/images/ or docs/videos/, and rewrites each feature's JSON to
 point at the local copy instead of the remote URL.
 
 Usage:

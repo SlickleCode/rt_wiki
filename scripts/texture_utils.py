@@ -20,7 +20,7 @@ def humanize(key: str) -> str:
 
 def find_texture(key: str) -> str | None:
     """Looks for <key>.png under each of TEXTURE_SEARCH_DIRS. Returns the
-    path as it should appear in a generated page (pages/*.html), or None."""
+    path as it should appear in a generated page (docs/*.html), or None."""
     for subdir in constants.TEXTURE_SEARCH_DIRS:
         on_disk = os.path.join(constants.TEXTURES_DIR, subdir, key + ".png")
         if os.path.isfile(on_disk):
