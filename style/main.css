@@ -262,8 +262,11 @@ img {
 .sidebar-component .sidebar-item-list {
     display: flex;
     flex-direction: column;
+    flex: 1 1 0;
     margin-top: 10px;
     border-top: 1px solid white ;
+    overflow-y: auto;
+    min-height: 0;
 }
 
 .sidebar-component .sidebar-line-item {
