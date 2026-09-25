@@ -1,0 +1,17 @@
+{
+  "title": "Light Redirector",
+  "category": "block",
+  "description": "The Light Redirector switches the model of a block placed next to it with the model of the block that is on the opposite side of it. Right clicking one of the sides will disable it. Blocks on disabled sides won\u2019t change appereance. You can for example use it to make blocks like lamps look like normal blocks.",
+  "keywords": [
+    "Light",
+    "Redirector"
+  ],
+  "images": [],
+  "recipe_images": [
+    "https://lumien.net/rtwiki/images/crafting/light-redirector.png"
+  ],
+  "videos": [
+    "https://lumien.net/rtwiki/images/screenshots/light-redirector-1.mp4",
+    "https://lumien.net/rtwiki/images/screenshots/light-redirector-2.mp4"
+  ]
+}

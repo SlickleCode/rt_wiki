@@ -1,0 +1,18 @@
+{
+  "title": "Luminous Blocks",
+  "category": "block",
+  "description": "Luminous Blocks are bright single colored blocks that glow in the dark. Translucent Luminous Blocks are the same except they are semi transparent.",
+  "keywords": [
+    "Blocks",
+    "Luminous"
+  ],
+  "images": [
+    "https://lumien.net/rtwiki/images/screenshots/luminous-blocks-1.png",
+    "https://lumien.net/rtwiki/images/screenshots/luminous-blocks-2.png"
+  ],
+  "recipe_images": [
+    "https://lumien.net/rtwiki/images/crafting/luminous-blocks-1.png",
+    "https://lumien.net/rtwiki/images/crafting/luminous-blocks-2.png"
+  ],
+  "videos": []
+}

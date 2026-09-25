@@ -1,0 +1,23 @@
+{
+  "title": "Divining Rods",
+  "category": "item",
+  "description": "Holding a divining rod in your main or off hand will show you nearby ore through walls. The range is is a 11x11x11 cube centered on you.\n\nThe basic divining rods only show you one ore while the vanilla one shows all vanilla ores at once.\n\nDepending on the mods you have installed more divining rods might be available, if you would like one to be added for another mods ores feel free to create an issue on github.",
+  "keywords": [
+    "Divining",
+    "Rods"
+  ],
+  "images": [],
+  "recipe_images": [
+    "https://lumien.net/rtwiki/images/crafting/divining-rods-coal.png",
+    "https://lumien.net/rtwiki/images/crafting/divining-rods-diamond.png",
+    "https://lumien.net/rtwiki/images/crafting/divining-rods-emerald.png",
+    "https://lumien.net/rtwiki/images/crafting/divining-rods-gold.png",
+    "https://lumien.net/rtwiki/images/crafting/divining-rods-iron.png",
+    "https://lumien.net/rtwiki/images/crafting/divining-rods-lapis.png",
+    "https://lumien.net/rtwiki/images/crafting/divining-rods-redstone.png",
+    "https://lumien.net/rtwiki/images/crafting/divining-rods-universal.png"
+  ],
+  "videos": [
+    "https://lumien.net/rtwiki/images/screenshots/divining-rods.mp4"
+  ]
+}

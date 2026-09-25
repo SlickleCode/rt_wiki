@@ -1,64 +1,163 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
+"""
+Builds the static wiki pages under pages/ from the reusable feature data in
+data/features/*.json, using the Jinja2 templates in template-html/.
+
+Adding a new mod feature to the wiki means dropping a new JSON file into
+data/features/ - no template or generator changes required. See
+data/README.md for the schema.
+"""
+
+from __future__ import annotations
+
+import glob
+import json
+import os
+
+from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 import constants
-import os
-import re
-import json
-from bs4 import BeautifulSoup
 
-# Create the output folder if it does not already exist
-def create_output_folder() -> None:
+
+def load_categories() -> list:
+    with open(constants.CATEGORIES_FILE, "r") as categories_file:
+        return json.load(categories_file)
+
+
+def load_features() -> list:
+    features = []
+    for path in sorted(glob.glob(os.path.join(constants.FEATURES_DIR, "*.json"))):
+        with open(path, "r") as feature_file:
+            feature = json.load(feature_file)
+        feature["id"] = os.path.splitext(os.path.basename(path))[0]
+        feature.setdefault("images", [])
+        feature.setdefault("videos", [])
+        feature.setdefault("properties", [])
+        feature.setdefault("keywords", [])
+        feature.setdefault("recipe_images", [])
+        feature.setdefault("recipe", None)
+        features.append(feature)
+    return sorted(features, key=lambda feature: feature["title"])
+
+
+def humanize(key: str) -> str:
+    return key.replace("_", " ").replace("-", " ").title()
+
+
+def find_texture(key: str) -> str | None:
+    """Looks for <key>.png under each of TEXTURE_SEARCH_DIRS. Returns the
+    path as it should appear in a generated page (pages/*.html), or None."""
+    for subdir in constants.TEXTURE_SEARCH_DIRS:
+        on_disk = os.path.join(constants.TEXTURES_DIR, subdir, key + ".png")
+        if os.path.isfile(on_disk):
+            return f"../textures/{subdir}/{key}.png"
+    return None
+
+
+def build_icon_index(features: list) -> dict:
+    """Maps feature id -> resolved texture path (or None), so recipes can
+    reference another feature by id and automatically pick up its icon."""
+    return {feature["id"]: find_texture(feature["id"]) for feature in features}
+
+
+def resolve_slot(raw_slot, icon_index: dict) -> dict | None:
+    """Normalizes a recipe grid entry (None, a texture key string, or a
+    {"key", "label"} object) into a renderable {icon, label} slot."""
+    if raw_slot is None:
+        return None
+    if isinstance(raw_slot, str):
+        raw_slot = {"key": raw_slot}
+
+    key = raw_slot.get("key")
+    icon = find_texture(key) if key else None
+    if icon is None and key in icon_index:
+        icon = icon_index[key]
+
+    label = raw_slot.get("label") or (humanize(key) if key else None)
+    return {"icon": icon, "label": label}
+
+
+def resolve_recipe(recipe: dict | None, icon_index: dict) -> dict | None:
+    if not recipe:
+        return None
+
+    shape = [
+        [resolve_slot(slot, icon_index) for slot in row]
+        for row in recipe.get("shape", [])
+    ]
+
+    result = recipe.get("result", {})
+    result_key = result.get("key")
+    result_icon = find_texture(result_key) if result_key else None
+    if result_icon is None and result_key in icon_index:
+        result_icon = icon_index[result_key]
+
+    return {
+        "shape": shape,
+        "result": {
+            "icon": result_icon,
+            "label": result.get("label") or (humanize(result_key) if result_key else None),
+            "count": result.get("count", 1),
+        },
+    }
+
+
+def group_by_category(features: list) -> dict:
+    grouped = {}
+    for feature in features:
+        grouped.setdefault(feature["category"], []).append(feature)
+    return grouped
+
+
+def clean_output_dir() -> None:
     if not os.path.isdir(constants.OUTPUT_DIR):
-        os.mkdir(constants.OUTPUT_DIR)
+        os.makedirs(constants.OUTPUT_DIR)
+        return
+    for stale_page in glob.glob(os.path.join(constants.OUTPUT_DIR, "*.html")):
+        os.remove(stale_page)
 
-def replace_images(output, image_paths) -> str:
-    print("Generating image tags...")
-    for image_path in image_paths:
-        re.sub(constants.IMAGE_REPLACE, image_path, output)
-    return output
 
-def construct_sidebar(item_list_json) -> None:
-    with open("../" + constants.TEMPLATE_DIR+"/sidebar.html", "r") as sidebar_file: 
-        soup = BeautifulSoup(sidebar_file, 'html.parser')
-        item_list = json.loads(item_list_json)
-        item_headers = soup.find_all("div", class_="sidebar-header-item")
-
-        for item in item_list:
-            print(item['category'])
-            for header in item_headers:
-                if item['category'] == header.text.strip():
-                    newtag = BeautifulSoup('<div class="sidebar-line-item"></div>', 'html.parser')
-                    itemlink = BeautifulSoup('<a href="./' + item['title'] + '.html"></a>', 'html.parser')
-                    itemlink.a.append(item['title'])
-                    newtag.div.append(itemlink)
-                    headeritemidentifier = item['category'].lower() + "-header"
-                    soup.find("div", {"id": headeritemidentifier}).insert_after(newtag)
-
-        with open("output1.html", "w") as file:
-            soup.prettify()
-            file.write(str(soup))
-    return
-
-# Main Function
 def main() -> None:
-    with open("../"+constants.TEMPLATE_DIR+"/template.html", "r") as template_file:
-        template = template_file.read()
-        
-        with open("../item-list.json", "r") as json_file:
-            item_list_json = json_file.read()
-        item_list = json.loads(item_list_json)
+    env = Environment(
+        loader=FileSystemLoader(constants.TEMPLATE_DIR),
+        autoescape=select_autoescape(["html"]),
+    )
 
-        construct_sidebar(item_list_json)
-        create_output_folder()
+    categories = load_categories()
+    features = load_features()
+    icon_index = build_icon_index(features)
+    features_by_category = group_by_category(features)
 
-        for item in item_list:
-            output = str(template)
-            output = re.sub(constants.TITLE_REPLACE, item['title'], output)
-            output = re.sub(constants.DESC_REPLACE, item['description'], output)
+    for feature in features:
+        feature["icon"] = icon_index.get(feature["id"])
+        feature["recipe"] = resolve_recipe(feature.get("recipe"), icon_index)
 
-            output = replace_images(output, item['image_paths'])
-            with open(constants.OUTPUT_DIR+"/"+item['title'] + ".html", "w") as output_file:
-                output_file.write(output)
+    clean_output_dir()
+
+    index_template = env.get_template("index.html")
+    with open(os.path.join(constants.OUTPUT_DIR, "index.html"), "w") as output_file:
+        output_file.write(
+            index_template.render(
+                categories=categories,
+                features_by_category=features_by_category,
+                active_id=None,
+            )
+        )
+
+    page_template = env.get_template("page.html")
+    for feature in features:
+        with open(os.path.join(constants.OUTPUT_DIR, f"{feature['id']}.html"), "w") as output_file:
+            output_file.write(
+                page_template.render(
+                    categories=categories,
+                    features_by_category=features_by_category,
+                    active_id=feature["id"],
+                    feature=feature,
+                )
+            )
+
+    print(f"Generated {len(features)} feature pages and index.html in {constants.OUTPUT_DIR}/")
+
 
 if __name__ == "__main__":
     main()

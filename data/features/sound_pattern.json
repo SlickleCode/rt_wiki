@@ -1,0 +1,16 @@
+{
+  "title": "Sound Pattern",
+  "category": "item",
+  "description": "Represents a specific sound effect. Used for the Sound Box / Sound Recorder / ( Portable ) Sound Dampener . Has the sound it \u201ccontains\u201d in its name & tooltip.",
+  "keywords": [
+    "Pattern",
+    "Sound"
+  ],
+  "images": [
+    "https://lumien.net/rtwiki/images/screenshots/sound-pattern.png"
+  ],
+  "recipe_images": [
+    "https://lumien.net/rtwiki/images/crafting/sound-pattern.png"
+  ],
+  "videos": []
+}
