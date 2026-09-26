@@ -233,6 +233,7 @@ img {
 
 .sidebar-component {
     position: fixed;
+    box-sizing: border-box;
     width: 300px;
     height: 100%;
     padding: 8px;
