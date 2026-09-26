@@ -310,6 +310,7 @@ img {
     margin-top: 10px;
     border-top: 1px solid white ;
     overflow-y: auto;
+    overscroll-behavior-y: contain;
     min-height: 0;
 }
 
