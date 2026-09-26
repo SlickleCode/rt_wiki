@@ -1,4 +1,5 @@
 const COLLAPSED_STORAGE_KEY_PREFIX = "sidebar-collapsed-";
+const SCROLL_STORAGE_KEY = "sidebar-scroll-position";
 
 window.onload = function() {
     document.getElementById("open-sidebar").addEventListener("click", openSidebar);
@@ -6,6 +7,26 @@ window.onload = function() {
     document.getElementById("search-field").addEventListener("input", filterSidebar);
     window.onresize = removeMobileSidebarClasses;
     initSidebarCategories();
+    initSidebarScrollPosition();
+}
+
+function initSidebarScrollPosition() {
+    let sidebarList = document.getElementById("sidebar-item-list");
+    try {
+        let scrollTop = sessionStorage.getItem(SCROLL_STORAGE_KEY);
+        if (scrollTop !== null) {
+            sidebarList.scrollTop = parseInt(scrollTop, 10);
+        }
+    } catch (e) {
+        // sessionStorage unavailable (private browsing, etc.) - scroll position just won't persist
+    }
+    sidebarList.addEventListener("scroll", function() {
+        try {
+            sessionStorage.setItem(SCROLL_STORAGE_KEY, sidebarList.scrollTop);
+        } catch (e) {
+            // sessionStorage unavailable (private browsing, etc.) - scroll position just won't persist
+        }
+    });
 }
 
 function initSidebarCategories() {
