@@ -6,6 +6,12 @@ on:
     branches: [ master ]
   workflow_dispatch:
 
+# The default GITHUB_TOKEN is read-only unless a workflow asks for more.
+# Without this, the final `git push` is denied with a 403, since the bot
+# has no write access to repo contents by default.
+permissions:
+  contents: write
+
 jobs:
   # This workflow contains a single job called "build"
   build:
