@@ -3,6 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script>
+      (function() {
+        try {
+          var stored = localStorage.getItem("theme");
+          var theme = stored || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+          document.documentElement.setAttribute("data-theme", theme);
+        } catch (e) {}
+      })();
+    </script>
     <title>{% block title %}Random Things Wiki{% endblock %}</title>
     <meta name="description" content="{% block meta_description %}A community wiki for the Random Things Minecraft mod.{% endblock %}">
     <meta name="viewport" content="width=device-width, initial-scale=1">

@@ -8,6 +8,23 @@ window.onload = function() {
     window.onresize = removeMobileSidebarClasses;
     initSidebarCategories();
     initSidebarScrollPosition();
+    initThemeToggle();
+}
+
+function initThemeToggle() {
+    document.getElementById("theme-toggle").addEventListener("click", function() {
+        let current = document.documentElement.getAttribute("data-theme");
+        setTheme(current === "dark" ? "light" : "dark");
+    });
+}
+
+function setTheme(theme) {
+    document.documentElement.setAttribute("data-theme", theme);
+    try {
+        localStorage.setItem("theme", theme);
+    } catch (e) {
+        // localStorage unavailable (private browsing, etc.) - theme just won't persist
+    }
 }
 
 function initSidebarScrollPosition() {
