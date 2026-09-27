@@ -384,7 +384,7 @@ img {
     display: flex;
 }
 
-.sidebar-component .sidebar-search-line svg {
+#close-sidebar {
     width: 42px;
 }
 
@@ -510,7 +510,7 @@ img {
         display: flex;
     }
 
-    .sidebar-component .sidebar-search-line svg {
+    #close-sidebar {
         display: none;
     }
 
